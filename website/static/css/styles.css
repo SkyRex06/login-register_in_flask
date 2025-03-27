@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +25,6 @@ body {
     font-weight: bold;
 }
 
-/* Home Container */
 .home-container h1 {
     font-size: 3rem;
     color: #58a6ff;
@@ -41,7 +39,6 @@ body {
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Buttons */
 .btn {
     padding: 12px 24px;
     margin: 10px;
@@ -78,7 +75,6 @@ body {
     box-shadow: 0 6px 12px rgba(88, 166, 255, 0.4);
 }
 
-/* Auth Container */
 .auth-container {
     background: rgba(22, 27, 34, 0.9);
     padding: 35px;
@@ -94,7 +90,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* Form Inputs */
 .auth-form input {
     width: 100%;
     padding: 14px;
@@ -112,7 +107,6 @@ body {
     box-shadow: 0 0 8px rgba(88, 166, 255, 0.6);
 }
 
-/* Submit Button */
 button[type="submit"] {
     width: 100%;
     padding: 14px;
@@ -131,7 +125,6 @@ button[type="submit"]:hover {
     box-shadow: 0 6px 20px rgba(88, 166, 255, 0.6);
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -142,7 +135,6 @@ button[type="submit"]:hover {
     to { transform: translateY(0); opacity: 1; }
 }
 
-/* Responsive Design */
 @media (max-width: 450px) {
     .auth-container {
         width: 90%;

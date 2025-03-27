@@ -4,4 +4,4 @@ import os
 app = create_app()
 
 if __name__ == '__main__':
-    app.run(debug=os.getenv('FLASK_DEBUG', 'True') == 'True')  # Use environment variable for debug mode
+    app.run(debug=os.getenv('FLASK_DEBUG', 'True') == 'True')  

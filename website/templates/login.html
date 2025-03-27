@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to CryptoMart - Secure Crypto Trading.">
+    <meta name="keywords" content="crypto, cryptocurrency, login, blockchain, CryptoMart">
+    <meta name="author" content="CryptoMart">
     <title>Login - CryptoMart</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.ico') }}">
 </head>
 <body class="auth-body">
     <div class="auth-container">
-        <div class="auth-header">
+        <header class="auth-header">
             <h1>Welcome Back</h1>
             <p>Sign in to access your account</p>
-        </div>
-        <form id="login-form" class="auth-form">
+        </header>
+
+        <form action="/login" method="POST" class="auth-form">
             <div class="form-group">
-                <input type="email" name="email" placeholder="Email" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <input type="password" name="password" placeholder="Password" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </div>
             <div class="form-footer">
                 <a href="#" class="forgot-password">Forgot password?</a>
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
         </form>
-        <p class="auth-footer">Don't have an account? <a href="/auth/sign-up">Sign up</a></p>
+
+        <footer class="auth-footer">
+            <p>Don't have an account? <a href="/sign-up">Sign up</a></p>
+        </footer>
     </div>
 </body>
 </html>

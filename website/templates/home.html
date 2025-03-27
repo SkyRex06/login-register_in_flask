@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CryptoMart - Your gateway to secure cryptocurrency trading. Sign up or log in now!">
+    <meta name="keywords" content="crypto, cryptocurrency, trading, blockchain, CryptoMart">
+    <meta name="author" content="CryptoMart">
     <title>Welcome to CryptoMart</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.ico') }}">
 </head>
 <body class="home-body">
     <div class="home-container">
-        <h1>Welcome to CryptoMart</h1>
-        <p>Sign up as a new user or sign in to your existing account.</p>
+        <h1>Welcome to <span class="brand-text">CryptoMart</span></h1>
+        <p>Sign up as a new user or log in to your existing account.</p>
         <div class="home-buttons">
-            <a href="/sign-up" class="btn btn-primary">Sign Up</a>
-            <a href="/login" class="btn btn-secondary">Login</a>
+            <a href="/sign-up" class="btn btn-primary" aria-label="Sign up for CryptoMart">Sign Up</a>
+            <a href="/login" class="btn btn-secondary" aria-label="Log in to CryptoMart">Login</a>
         </div>
     </div>
 </body>
 </html>
+
+

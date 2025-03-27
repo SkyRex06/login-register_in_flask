@@ -1,4 +1,3 @@
-# filepath: website/auth.py
 from flask import Blueprint, render_template, request, jsonify
 
 auth = Blueprint('auth', __name__)
@@ -20,7 +19,7 @@ def login():
 
 @auth.route('/logout')
 def logout():
-    return "<p>Logout Page</p>"
+    return render_template("logout.html")
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def signup():
@@ -29,7 +28,6 @@ def signup():
         username = data.get('username')
         password = data.get('password')
 
-        # Dummy sign-up logic
         return jsonify({"message": "Sign-up successful"}), 201
 
     return render_template("signup.html")
